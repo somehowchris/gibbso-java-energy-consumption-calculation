@@ -3,23 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package energieberechung.models;
+package hashmap;
 
 /**
  *
- * @author chris
+ * @author Nicola Temporal
  */
 public class EnergieData {
-    private int jahr;
-    private String energieform;
-    private int betrag;
-    private int bevCH;
-    private int bevAus;
 
-    public EnergieData() {
-    }
+    int jahr;
+    int energieform;
+    int betrag;
+    int bevCH;
+    int bevAus;
 
-    public EnergieData(int jahr, String energieform, int betrag, int bevCH, int bevAus) {
+    public EnergieData(int jahr, int energieform, int betrag, int bevCH, int bevAus) {
         this.jahr = jahr;
         this.energieform = energieform;
         this.betrag = betrag;
@@ -39,11 +37,11 @@ public class EnergieData {
         return bevCH;
     }
 
-    public int getJahr() {
-        return jahr;
+    public int getEnergieform() {
+        return energieform;
     }
 
-    public String getEnergieform() {
-        return energieform;
+    public int getJahr() {
+        return jahr;
     }
 }
